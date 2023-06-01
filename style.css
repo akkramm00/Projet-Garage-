@@ -20,9 +20,10 @@ html,body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-image: ;
+    background-image:url(imag.png) ;
 }
 
 .main {
-    
+color:white;
+background:grey;
 }
