@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="èdescription" content="ce site propose une multitude de choix de voitures a vendre ,et une large gamme de voiture pour la location courte durée">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="style.css">
     <title>projet garage </title>
 </head>
 <!--=======================================  BODY ===================================-->
@@ -15,136 +15,361 @@
 <!--=======================================  HEADER ===================================-->
 
     <header>
-        <div class="container-fluid ">
-            <div class="row d-flex justify-content-around align-items-center w-100">
-                <nav class="col-12 navbar navbar-expand-lg navbar-dark bg-dark w-100">
-                    <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
-                        </ul>
-                        <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-                    </div>
-                    </div>
-                </nav>
-            </div>
+        <div class="container-fluid header bg-danger py-5 my-2">
             <div class="row d-flex justify-content-around align-items-center">
-                <div class="col-12 col-sm-6 col-md-6 col-lg-6  d-flex justify-content-around align-items-center">
-                    <img src="" alt="logo">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Logo</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">À propos</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+                  
+            </div>
+            <div class="row d-flex justify-content-start align-items-center my-5">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4  d-flex justify-content-around align-items-center">
+                    <img src="logo garage.avif" alt="logo" width="200px" height="150px">
                 </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex justify-content-around align-items-center">
-                    <h1>TITRE DU GARAGE</h1>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 d-flex justify-content-around align-items-center">
+                    <h1 class="merriwether text-white">TITRE DU GARAGE</h1>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 d-flex justify-content-around align-items-center">
+                    <h1></h1>
                 </div>
             </div>
         </div>
     </header>
+   <!--=================================== form-contact================================-->
+   
+  
+  <main class="container-fluid bg-warning py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col box-ch my-3">
+          <h2 class="text-danger">Présentation </h2>
+          <p class="text-white fs-5">AUTOS REPARE, votre garage à CARIGNAN vous accueille pour l'entretien et la réparation de votre véhicule, quelle que soit la marque. Votre garagiste du réseau GARAGE PREMIER vous propose des prestations techniques pour votre véhicule : échappement, embrayage, climatisation, vidange à CARIGNAN. Chez AUTOS REPARE, découvrez aussi toutes les promos auto à CARIGNAN. N'hésitez plus, rendez-vous chez AUTOS REPARE pour le diagnostic de votre véhicule à CARIGNAN. </p>
+        </div>
+        <div class="col">
+          <table class="table">
+            <thead>
+              <tr>
+                
+                <th scope="col">Jours</th>
+                <th scope="col">Matin</th>
+                <th scope="col">Après-midi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                
+                <th scope="row">Lundi</td>
+                <td>8:00 - 12:00</td>
+                <td>13:30 - 18:00</td>
+              </tr>
+              <tr>
+               
+                <th scope="row">Mardi</td>
+                <td>8:00 - 12:00</td>
+                <td>13:30 - 18:00</td>
+              </tr>
+              <tr>
+                <th scope="row">Mercredi</th>
+                <td >8:00 - 12:00</td>
+                <td>13:30 - 18:00</td>
+              </tr>
+              <tr>
+                <th scope="row">Jeudi</th>
+                <td >8:00 - 12:00</td>
+                <td>13:30 - 18:00</td>
+              </tr>
+              <tr>
+                <th scope="row">Vendredi</th>
+                <td >8:00 - 12:00</td>
+                <td>13:30 - 18:00</td>
+              </tr>
+              <tr>
+                <th scope="row">Samedi</th>
+                <td >8:00 - 12:00</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
 
 
-  <!--=======================================  MAIN ===================================-->
-  <main>
-    <!DOCTYPE html>
-<html>
-<head>
-    <title>Ajouter une voiture</title>
-</head>
-<body>
-    <?php
-    // Vérifier si le formulaire a été soumis
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Récupérer les données du formulaire
-        $marque = $_POST["marque"];
-        $modele = $_POST["modele"];
-        $annee = $_POST["annee"];
-        $prix = $_POST["prix"];
-        $description = $_POST["description"];
-
-        // Connexion à la base de données
-        $servername = "localhost";
-        $username = "votre_nom_utilisateur";
-        $password = "votre_mot_de_passe";
-        $dbname = "nom_de_votre_base_de_donnees";
-
-        $conn = new mysqli($servername, $username, $password, $dbname);
-
-        // Vérifier la connexion
-        if ($conn->connect_error) {
-            die("Échec de la connexion à la base de données: " . $conn->connect_error);
-        }
-
-        // Préparer et exécuter la requête d'insertion
-        $sql = "INSERT INTO voitures (marque, modele, annee, prix, description) VALUES ('$marque', '$modele', '$annee', '$prix', '$description')";
-
-        if ($conn->query($sql) === TRUE) {
-            echo "Voiture ajoutée avec succès.";
-        } else {
-            echo "Erreur lors de l'ajout de la voiture: " . $conn->error;
-        }
-
-        // Fermer la connexion à la base de données
-        $conn->close();
-    }
-    ?>
-
-    <h2>Ajouter une voiture</h2>
-
-    <form method="post" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
-        <label for="marque">Marque:</label>
-        <input type="text" name="marque" required><br>
-
-        <label for="modele">Modèle:</label>
-        <input type="text" name="modele" required><br>
-
-        <label for="annee">Année:</label>
-        <input type="number" name="annee" required><br>
-
-        <label for="prix">Prix:</label>
-        <input type="number" name="prix" step="0.01" required><br>
-
-        <label for="description">Description:</label><br>
-        <textarea name="description" rows="4" cols="50"></textarea><br>
-
-        <input type="submit" value="Ajouter">
-    </form>
-</body>
-</html>
-
-</body>
-</html>
-
-
+    <h2 class="text-danger bg-white w-100 b-bottom fs-1 text-center py-3">Nos nouveautés</h2>
+        <div class="container my-5 ">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                        <div class="card h-100 box-ch">
+                            <a href=""><img src="image.projet\cayenne 2.jpg" class="card-img-top box-ch " alt="..."></a>
+                            <div class="card-body">
+                            <h5 class="card-title">Porsche Cayenne 4.1 V8 TDI - 385 BVA Tiptronic S Start&Stop 2014 Diesel PHASE 2</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 box-ch">
+                        <a href=""><img src="image.projet\gle 1.jpg" class="card-img-top box-ch" alt="..."></a>
+                        <div class="card-body">
+                        <h5 class="card-title">Mercedes Classe GLE 350 de 194+136ch AMG Line 4Matic 9G-Tronic</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 box-ch">
+                        <a href=""><img src="image.projet\range 2.jpg" class="card-img-top box-ch" alt="..."></a>
+                        <div class="card-body">
+                        <h5 class="card-title">Vends Land Rover Discovery 5, 3.0 SD6 306 HSE LUXURY</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        </div>
+                        <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+                <div class="col">
+                    <div class="card h-100 box-ch">
+                        <a href=""><img src="image.projet\sq 1.jpg" class="card-img-top box-ch" alt="..."></a>
+                        <div class="card-body">
+                        <h5 class="card-title">Audi SQ5 3.0 V6 TFSI 354ch quattro Tiptronic 8</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                     <div class="card h-100 box-ch">
+                        <a href=""><img src="image.projet\touareg 1.jpg" class="card-img-top box-ch" alt="..."></a>
+                        <div class="card-body">
+                        <h5 class="card-title">Volkswagen Touareg 3.0 TSI eHybrid 462ch R 4Motion BVA8</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 box-ch">
+                        <a href=""><img src="image.projet\volk id1.jpg" class="card-img-top box-ch" alt="..."></a>
+                        <div class="card-body">
+                        <h5 class="card-title">Volkswagen ID4 204CV-77KW attelage + 4 pneus neuf + chaine</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        </div>
+                        <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 box-ch">
+                        <a href=""><img src="image.projet\classeC3.jpg" class="card-img-top box-ch" alt="..."></a>
+                        <div class="card-body">
+                        <h5 class="card-title">Mercedes classe c 250D BI Turbo 204ch</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 box-ch">
+                        <a href=""><img src="image.projet\xc90-1.jpg" class="card-img-top box-ch" alt="..."></a>
+                        <div class="card-body">
+                        <h5 class="card-title">Volvo xc90 d4 190 inscrition luxe geartronic 7 places</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 box-ch">
+                        <a href=""><img src="image.projet\x5-1.jpg" class="card-img-top box-ch" alt="..."></a>
+                        <div class="card-body">
+                        <h5 class="card-title">BMW X5 M COMPETITION 625ch BVA8</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        </div>
+                        <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+
+    <section class="container-fluid bg-danger py-5">
+      <h2 class="text-danger bg-white w-100 b-bottom fs-1 text-center py-3">Nos préstations</h2>
+        <div class="container">
+            <div class="row">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                          <div class="card box-ch">
+                            <img src="image.projet\diagnostique.jpg" class="card-img-top box-ch" height="300px" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Diagnostic</h5>
+                              <p class="card-text">Depuis 1977, la société est spécialisée dans le diagnostic électrique et la recherche de pannes traditionnelles. Equipés des derniers outils de diagnostic BOSCH et AUTEL, nous sommes en mesure de diagnostiquer et réparer toutes sortes de pannes sur vos véhicules. Nous réalisons aussi la réparation des faisceaux électriques ainsi que la recherche de pannes classiques avec multimètre et contrôle des actionneurs.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card box-ch">
+                            <img src="image.projet\vidange.jpg" class="card-img-top box-ch" height="300px" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Entretien </h5>
+                              <p class="card-text">Marque d’huile renommée, note partenaire IGOL dispose d’une gamme d’huile complète homologuée par les plus grands constructeurs automobiles. Combiné à une filtration origine ou adaptable premium, nous sommes à même de vous proposer des révisions avec garantie constructeur préservée pour des prix jusqu’à 60% inférieur au réseau.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card box-ch">
+                            <img src="image.projet\mecanique.jpg" class="card-img-top box-ch" height="300px" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Transmission</h5>
+                              <p class="card-text">Très largement diffusées aujourd’hui, les boîtes de vitesses automatiques à convertisseur, robotisées voir à convertisseur nécessitent un entretien périodique nécessitant le remplacement de l’huile ainsi que du filtre. Cette opération doit impérativement être réalisée par du personnel qualifié avec un outillage adapté sous peine de destruction de la boîte par erreur sur le niveau d’huile. C’est pour cette raison que nous nous sommes équipés de la machine de vidange MAHLE qui est à ce jour la seule machine utilisée par les constructeurs automobiles.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card box-ch">
+                            <img src="image.projet\carrosserie.jpg" class="card-img-top box-ch" height="300px" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Carrosserie</h5>
+                              <p class="card-text">Depuis 1977, des générations de véhicules sont passées dans nos ateliers. Nous avons à cœur de perpétuer la tradition en vous proposant d’entretenir et de réparer vos anciennes. Notre atelier dispose des outils et du savoir faire nécessaire pour maintenir votre ancienne au top de sa forme ! Notre objectif numero un est de satisfaire vos exigences ,ainsi que de satisfaire vos besoins .</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+
+        </div>
+    </section>
+    <article class="container-fluid my-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="tem text-center ">ils témoignent de leurs éxpériences, sont-ils satisfaits ?</h2>
+                <h4 class="tem1 text-center text-secondary">Avec nous ,vous allez la vie est facile </h3>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                      <div class="card h-100 box-ch">
+                        <img src="https://www.heaj.be/wp-content/uploads/2020/03/5-etoiles-png-5.png" class="card-img-top" height="200px" alt="...">
+                        <div class="card-body">
+                          <h3 class="card-title text-white bg-secondary text-center py-2">Changement d'amortisseur</h5>
+                          <p class="card-text text-center fs-6 bg-success text-light p-5 rounded-3">« Très professionnel ! Il m'a même prêté un véhicule pendant les réparations. Merci beaucoup, je recommande ce garage , c'est super ! »</p>
+                        </div>
+                        <div class="card-footer text-center ">
+                          <small class="text-muted  ">Alain A.
+                            Chevrolet Nubira, avis déposé le 03 janvier 2023</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col ">
+                      <div class="card h-100 box-ch">
+                        <img src="https://www.heaj.be/wp-content/uploads/2020/03/5-etoiles-png-5.png" class="card-img-top" height="200px" alt="...">
+                        <div class="card-body">
+                          <h3 class="card-title text-white bg-secondary text-center py-2">Recharge de la Climatisation</h5>
+                          <p class="card-text text-center fs-6 bg-success text-light p-5 rounded-3">« J'ai eu un excellent accueil et une prise en charge immédiate pour effectuer une recharge de climatisation. excellent ! »</p>
+                        </div>
+                        <div class="card-footer text-center ">
+                          <small class="text-muted ">Régis D.
+                            Mercedes-Benz, avis déposé le 07 janvier 2023</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100 box-ch">
+                        <img src="https://www.heaj.be/wp-content/uploads/2020/03/5-etoiles-png-5.png" class="card-img-top" height="200px" alt="...">
+                        <div class="card-body">
+                          <h3 class="card-title text-white bg-secondary text-center py-2">Vidange + Filtre à Huile</h5>
+                          <p class="card-text text-center fs-6 bg-success text-light p-5 rounded-3">« J'ai eu un excellent accueil et une prise en charge immédiate pour effectuer une recharge de climatisation. Je conseille! ».</p>
+                        </div>
+                        <div class="card-footer text-center">
+                          <small class="text-muted">Eric B.
+                            Renault Captur, avis déposé le 11 janvier 2023</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </article>
 
 <!--=======================================  FOOTER ===================================-->
 
-    <footer>
-
+    <footer class="container-fluid footer">
+        <div class="row">
+            <div class="col-12 col-md-3 col-3">
+                <ul>
+                    <li><a href="#">lien1</a></li>
+                    <li><a href="#">lien1</a></li>
+                    <li><a href="#">lien1</a></li>
+                    <li><a href="#">lien1</a></li>
+                  </ul>
+            </div>
+            <div class="col-12 col-md-3 col-3">
+                <ul>
+                    <li><a href="#">lien1</a></li>
+                    <li><a href="#">lien1</a></li>
+                    <li><a href="#">lien1</a></li>
+                    <li><a href="#">lien1</a></li>
+                  </ul>
+            </div>
+            <div class="col-12 col-md-3 col-3">
+                <ul>
+                    <li><a href="#">lien1</a></li>
+                    <li><a href="#">lien1</a></li>
+                    <li><a href="#">lien1</a></li>
+                    <li><a href="#">lien1</a></li>
+                  </ul>
+            </div>
+            <div class="col-12 col-md-2 col-3">
+                <ul>
+                    <li><a href="#">lien1</a></li>
+                    <li><a href="#">lien1</a></li>
+                    <li><a href="#">lien1</a></li>
+                    <li><a href="#">lien1</a></li>
+                  </ul>
+            </div>
+        </div>
     </footer>
+
 
 
 
@@ -161,9 +386,13 @@
 
     
 
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-<script src="script.js"></script>
+
+    
+    
+    <script src="script.js"></script>
 </body>
 </html>
