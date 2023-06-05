@@ -10,8 +10,10 @@ font-family: 'Rubik 80s Fade', cursive; */
     width:100%;
     z-index: 15;
     top:20px;
-    background:yellow
+    background:yellow;
 }
+
+
 body{
     margin:0;
     padding:0;
@@ -35,7 +37,18 @@ footer{
     border-radius:10px;
 }
 .b-bottom{
-    border-bottom: solid 4px white;
-   
+    border-bottom: solid 4px white; 
 
+}
+.style{
+    list-style:none;
+   
+}
+.critéres{
+    background:grey;
+    border-radius:15px;
+}
+.localisation{
+    border-radius:15px;
+    box-shadow:0 0 15px black;
 }
