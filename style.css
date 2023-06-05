@@ -5,6 +5,13 @@ font-family: 'Merriweather', serif;
 font-family: 'Redressed', cursive;
 font-family: 'Roboto', sans-serif;
 font-family: 'Rubik 80s Fade', cursive; */
+.fixed{
+    position:fixed;
+    width:100%;
+    z-index: 15;
+    top:20px;
+    background:yellow
+}
 body{
     margin:0;
     padding:0;
