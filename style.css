@@ -90,4 +90,11 @@ footer{
   text-decoration: none;
   cursor: pointer;
 }
-
+.form{
+    display: flex;
+    flex-direction:column;
+    justify-content: start;
+    align-items: start;
+    margin:10px;
+    font-size: 20px;
+}
