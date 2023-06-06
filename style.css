@@ -52,3 +52,42 @@ footer{
     border-radius:15px;
     box-shadow:0 0 15px black;
 }
+
+/* Style de la modal */
+.modal {
+  display: none; /* Par défaut, la modal est cachée */
+  position: fixed; /* Position fixe pour la superposer au contenu */
+  z-index: 1; /* Une valeur de z-index élevée pour la faire apparaître au-dessus du reste du contenu */
+  left: 50%;
+  top: 50%;
+  width: 50%;
+  height: 50%;
+  overflow: auto; /* Ajout d'un défilement si le contenu de la modal est trop long */
+  background-color: rgba(0, 0, 0,); /* Fond semi-transparent */
+}
+
+/* Style de la boîte de contenu de la modal */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* Centrer la modal verticalement et horizontalement */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* Style pour fermer la modal */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
