@@ -25,16 +25,16 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                       <ul class="navbar-nav">
                         <li class="nav-item active">
-                          <a class="nav-link" href="#">Accueil</a>
+                          <a class="nav-link" href="index.html">Accueil</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">À propos</a>
+                          <a class="nav-link" href="A-propos.html">À propos</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Services</a>
+                          <a class="nav-link" href="#services">Services</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Contact</a>
+                          <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                       </ul>
                     </div>
@@ -233,7 +233,7 @@
     </main>
 
     <section class="container-fluid bg-danger py-5">
-      <h2 class="text-warning bg-white w-100 b-bottom fs-1 text-center py-3">Nos préstations</h2>
+      <h2 class="text-warning bg-white w-100 b-bottom fs-1 text-center py-3" id="services">Nos prestations</h2>
         <div class="container">
             <div class="row">
                     <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -336,40 +336,45 @@
               <h1 class=" col-12 text-white fs-2 text-center">
                 Formulaire d'inscription
               </h1>
-              <form class="container text-white" action="traitement_inscription.php" method="post" onsubmit="return validerFormulaire()">
+              <form class="container form-control" action="traitement_inscription.php" method="post" onsubmit="return validerFormulaire()">
                 <div class="row">
-                  <div class="col-12 col-sm-12 col-md-12 col-lg-6 d-flex-column justify-content-center align-items-center">
-                    <div class="form genre">
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex-column justify-content-center align-items-center">
+
+                    <div class="form genre  mt-4">
                       <input type="radio" id="homme" name="genre" value="homme" required>
-                      <label for="homme">Homme</label>
+                      <label for="homme" class="form-label">homme</label>
+                      <input type="radio" id="femme" name="genre" value="femme" required>
+                      <label for="femme" class="form-label">femme</label>
                     </div>
-                    <div class="form mail">
-                      <label for="email">Email :</label>
-                      <input type="email" id="email" name="email" required>
+                    <div class="form nom mt-4">
+                      <label class="form-label col-6" for="nom">Nom :</label>
+                      <input class="form-control" type="text" id="nom" name="nom" required>
                     </div>
-                    <div class="form pword">
-                      <label for="motDePasse">Mot de passe :</label>
-                      <input type="password" id="motDePasse" name="motDePasse" required>
+                    <div class="form nom mt-4">
+                      <label class="form-label col-6" for="prenom">Prenom :</label>
+                      <input class="form-control" type="text" id="prenom" name="prenom" required>
                     </div>
-                    <div class="form nom">
-                      <label for="nom">Nom :</label>
-                      <input type="text" id="nom" name="nom" required>
+                    <div class="form mail mt-4">
+                      <label class="form-label text-dark" for="email">Email :</label>
+                      <input class="form-control" type="email" id="email" name="email" required>
                     </div>
-                    <div class="form submit">
+                    <div class="form password mt-4">
+                      <label class="form-label" for="motDePasse">Mot de passe :</label>
+                      <input class="form-control" type="password" id="motDePasse" name="motDePasse" required>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex-column justify-content-center align-items-center">
+                    <div class="form adress mt-4">
+                      <label class="form-label" for="adresse">Adresse :</label>
+                      <input class="form-control" type="text" id="adresse" name="adresse" required>
+                    </div>
+                    <div class="form comment mt-4">
+                      <label class="form-label" for="commentaire">Commentaire :</label>
+                      <textarea class="form-control" id="commentaire" name="commentaire" rows="4" required></textarea>
+                    </div>
+                    <div class="form submit mt-4">
                      <input type="submit" value="S'inscrire">
                    </div>
-                  </div>
-                  <div class="col-12 col-sm-12 col-md-12 col-lg-6 d-flex-column justify-content-center align-items-center">
-                    <div class="form adress">
-                      <input type="radio" id="femme" name="genre" value="femme" required>
-                      <label for="femme">Femme</label>
-                      <label for="adresse">Adresse :</label>
-                      <input type="text" id="adresse" name="adresse" required>
-                    </div>
-                    <div class="form comment">
-                      <label for="commentaire">Commentaire :</label>
-                      <textarea id="commentaire" name="commentaire" rows="4" required></textarea>
-                    </div>
                   </div>
                 </div>
               </form>
