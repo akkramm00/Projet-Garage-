@@ -19,19 +19,13 @@ body{
     padding:0;
     width:100%;
 }
-footer{
-    height: 400px;
-}
+
 
 .height{
     height:200px;
 }
 
-.footer{
-    background: black;
-    height:500px;
 
-}
 .box-ch{
     box-shadow:0 0 10px black;
     border-radius:10px;

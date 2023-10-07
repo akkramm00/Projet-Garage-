@@ -330,7 +330,7 @@
 
 <!--=======================================  FOOTER ===================================-->
 
-    <footer class="container-fluid footer">
+    <footer class="container-fluid footer bg-dark py-5">
         <div class="row">
             <div class="col">
               <h1 class=" col-12 text-white fs-2 text-center">
@@ -338,39 +338,54 @@
               </h1>
               <form class="container form-control" action="traitement_inscription.php" method="post" onsubmit="return validerFormulaire()">
                 <div class="row">
-                  <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex-column justify-content-center align-items-center">
-
+                  <div class="col-12 d-flex-column justify-content-center align-items-center">
                     <div class="form genre  mt-4">
-                      <input type="radio" id="homme" name="genre" value="homme" required>
-                      <label for="homme" class="form-label">homme</label>
-                      <input type="radio" id="femme" name="genre" value="femme" required>
-                      <label for="femme" class="form-label">femme</label>
-                    </div>
-                    <div class="form nom mt-4">
-                      <label class="form-label col-6" for="nom">Nom :</label>
-                      <input class="form-control" type="text" id="nom" name="nom" required>
-                    </div>
-                    <div class="form nom mt-4">
-                      <label class="form-label col-6" for="prenom">Prenom :</label>
-                      <input class="form-control" type="text" id="prenom" name="prenom" required>
-                    </div>
-                    <div class="form mail mt-4">
-                      <label class="form-label text-dark" for="email">Email :</label>
-                      <input class="form-control" type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form password mt-4">
-                      <label class="form-label" for="motDePasse">Mot de passe :</label>
-                      <input class="form-control" type="password" id="motDePasse" name="motDePasse" required>
+                      <label><input type="radio" id="homme" name="genre" value="homme" required>- Mr</label>
+                      <label><input type="radio" id="femme" name="genre" value="femme" required>- Mme</label>
                     </div>
                   </div>
-                  <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex-column justify-content-center align-items-center">
+                    <div class="col-12 col-sm-12 col-md-6">
+                      <div class="form nom mt-4">
+                        <label class="form-label" for="nom">Nom :</label>
+                        <input class="form-control" type="text" id="nom" name="nom" required>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6">
+                      <div class="form nom mt-4">
+                        <label class="form-label" for="prenom">Prenom :</label>
+                        <input class="form-control" type="text" id="prenom" name="prenom" required>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6">
+                      <div class="form mail mt-4">
+                        <label class="form-label text-dark" for="email">Email :</label>
+                        <input class="form-control" type="email" id="email" name="email" required>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6">
+                      <div class="form password mt-4">
+                        <label class="form-label" for="motDePasse">Mot de passe :</label>
+                        <input class="form-control" type="password" id="motDePasse" name="motDePasse" required>
+                      </div>
+                    </div>
+                  
+                  <div class="col-12 col-sm-12 col-md-6">
                     <div class="form adress mt-4">
-                      <label class="form-label" for="adresse">Adresse :</label>
+                      <label class="form-label" for="adresse">Adresse 1 :</label>
                       <input class="form-control" type="text" id="adresse" name="adresse" required>
                     </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6">
+                    <div class="form adress mt-4">
+                      <label class="form-label" for="adresse">Adresse 2 :</label>
+                      <input class="form-control" type="text" id="adresse" name="adresse" required>
+                    </div>
+                  </div>
+                  <div class="col-12">
                     <div class="form comment mt-4">
                       <label class="form-label" for="commentaire">Commentaire :</label>
                       <textarea class="form-control" id="commentaire" name="commentaire" rows="4" required></textarea>
+                    </div>
                     </div>
                     <div class="form submit mt-4">
                      <input type="submit" value="S'inscrire">
